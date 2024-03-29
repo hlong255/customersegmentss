@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit
 from datetime import datetime
-import base64
 import warnings
 warnings.simplefilter("ignore")
 
