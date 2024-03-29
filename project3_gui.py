@@ -12,8 +12,8 @@ import datetime as dt
 import warnings
 warnings.simplefilter("ignore")
 
-df = pd.read_csv('data/data.csv', encoding="ISO-8859-1")
-df_now=pd.read_csv('data/rfm_data.csv')
+df = pd.read_csv('data.csv', encoding="ISO-8859-1")
+df_now=pd.read_csv('rfm_data.csv')
 df_now['CustomerID'] = df_now['CustomerID'].astype(str)
 df_ex=pd.read_csv('rfm_ex.csv')
 
@@ -66,7 +66,7 @@ def load_data(uploaded_file):
     if uploaded_file is not None:
         st.sidebar.success("File uploaded successfully!")
         df = pd.read_csv(uploaded_file, encoding='latin-1', sep='\s+', header=None, names=['Customer_id', 'day', 'Quantity', 'Sales'])
-        df.to_csv("data/data.csv", index=False)
+        df.to_csv("data.csv", index=False)
         df['Date'] = pd.DatetimeIndex(df.InvoiceDate).date
         st.session_state['df'] = df
         return df
