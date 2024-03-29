@@ -123,7 +123,7 @@ elif choice == 'Data Understanding':
   st.write("Columns of data:",df.columns)
   st.write("First five rows of the data:")
   st.write(df.head())
-  st.image("info.jpg",caption='infomation')
+  st.image("info.JPG",caption='infomation')
   st.image("describe.JPG",caption='describe')
   st.image("CountCountry.JPG",caption='Count Country')
 
