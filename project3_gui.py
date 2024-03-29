@@ -117,7 +117,7 @@ cũng như giảm chi phí bán hàng.
     st.image("Customer-Segmentation.png", caption="Customer Segmentation", use_column_width=True)
 
 elif choice == 'Data Understanding':    
-  df = pd.read_csv('data/data.csv', encoding="ISO-8859-1")
+  df = pd.read_csv('data.csv', encoding="ISO-8859-1")
   st.write("### Data Overview")
   st.write("shape of data:", df.shape)
   st.write("Columns of data:",df.columns)
