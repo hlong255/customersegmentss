@@ -214,13 +214,9 @@ elif choice=='Predict':
         st.write("Mã khách hàng:", customer_id)
         st.write("Phân cụm khách hàng...")
     
-        try:
-          frequency, monetary, recency, level = get_customer_rfm(df_now, customer_id)
-    # Use the unpacked values here
-        except TypeError:
-          print("Error: get_customer_rfm function might be returning None.")
+       
         
-        #frequency, monetary, recency,level = get_customer_rfm(df_now,customer_id)
+        frequency, monetary, recency,level = get_customer_rfm(df_now,customer_id)
         st.write(f"Frequency: {frequency}")
         st.write(f"Monetary: {monetary}")
         st.write(f"Recency: {recency}")
