@@ -240,7 +240,7 @@ elif choice=='Predict':
             recency = st.slider("R", 1,4, key=f"R_{i}")
             frequency = st.slider("F", 1,4, key=f"F_{i}")
             monetary = st.slider("M", 1,4, key=f"M_{i}")
-            df_customer = df_customer.append({"R": recency, "F": frequency, "M": monetary}, ignore_index=True)
+            df_customer = pd.concat([df_customer, pd.DataFrame({"R": recency, "F": frequency, "M": monetary}, index=[0])], ignore_index=True)
             
             
 
