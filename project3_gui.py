@@ -14,7 +14,7 @@ df_ex=pd.read_csv('rfm_ex.csv')
 def rfm_level(df):
   if df['R']==4 and df['F']==4 and df['M']==4:
     return 'Khach hang Vip'
-  elif df['M']>=3 and df['F']>=2 and df['R']<=3:
+  elif df['M']==4 and df['F']>=3 and df['R']<=3:
     return 'Khach hang than thiet'
   elif df['R']==1 and df['F']==1 and df['M']==1:
     return 'Khach hang khong tham gia nua'
