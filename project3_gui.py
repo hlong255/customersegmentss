@@ -1,14 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px
-from sklearn.cluster import KMeans
 import pickle
-import streamlit as st
-import os
+import streamlit
 from datetime import datetime
 import base64
-import datetime as dt
 import warnings
 warnings.simplefilter("ignore")
 
