@@ -119,7 +119,6 @@ cũng như giảm chi phí bán hàng.
 elif choice == 'Data Understanding':    
   df = pd.read_csv('data.csv', encoding="ISO-8859-1")
   st.write("### Data Overview")
-  st.write("shape of data:", df.shape)
   st.write("Columns of data:",df.columns)
   st.write("First five rows of the data:")
   st.write(df.head())
