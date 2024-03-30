@@ -202,7 +202,7 @@ elif choice=='Predict':
 
 
 
-  st.write(df_ex)
+  st.image("rfm_predict.JPG")
 
   st.write("##### 1. Chọn cách nhập thông tin khách hàng")
   type = st.radio("Chọn cách nhập thông tin khách hàng", options=["Nhập mã khách hàng", 
