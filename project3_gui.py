@@ -137,7 +137,7 @@ elif choice == 'Data preparation':
   st.write(df.nunique())
 
   st.write("### Dua ve RFM")
-  st.image("rfm_predict.JPG")
+  st.write(df_now)
   st.write("## Recency (R): đo lường số ngày kể từ lần mua hàng cuối cùng lần truy cập gần đây nhất đến ngày giả định chung để tính toán ví dụ: ngày hiện tại, hoặc ngày max trong danh sách giao dịch")
   st.write("## Frequency (F): đo lường số lượng giao dịch tổng số lần mua hàng được thực hiện trong thời gian nghiên cứu.")
   st.write("## Monetary(M): đo lường số tiền mà mỗi khách hàng chi tiêu trong thời gian nghiên cứu.")
@@ -209,7 +209,7 @@ elif choice=='Predict':
                                                                     "Nhập thông tin khách hàng vào dataframe","Upload file format R F M"])
   if type == "Nhập mã khách hàng":
         st.subheader("Nhập mã khách hàng")
-        st.image("ex.JPG",caption="Example")
+        st.write(df_ex)
     
         customer_id = st.text_input("Nhập mã khách hàng")
         st.write("Mã khách hàng:", customer_id)
