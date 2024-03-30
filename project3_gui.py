@@ -200,16 +200,16 @@ elif choice=='Predict':
 
 
 
+  st.write(df_ex)
 
-
-  st.image("rfm_predict.JPG")
 
   st.write("##### 1. Chọn cách nhập thông tin khách hàng")
   type = st.radio("Chọn cách nhập thông tin khách hàng", options=["Nhập mã khách hàng", 
                                                                     "Nhập thông tin khách hàng vào dataframe","Upload file format R F M"])
   if type == "Nhập mã khách hàng":
         st.subheader("Nhập mã khách hàng")
-        st.write(df_ex)
+        st.image("rfm_predict.JPG")
+
     
         customer_id = st.text_input("Nhập mã khách hàng")
         st.write("Mã khách hàng:", customer_id)
