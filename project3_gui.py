@@ -209,6 +209,8 @@ elif choice=='Predict':
                                                                     "Nhập thông tin khách hàng vào dataframe","Upload file format R F M"])
   if type == "Nhập mã khách hàng":
         st.subheader("Nhập mã khách hàng")
+        st.image("ex.JPG",caption="Example")
+    
         customer_id = st.text_input("Nhập mã khách hàng")
         st.write("Mã khách hàng:", customer_id)
         st.write("Phân cụm khách hàng...")
@@ -247,6 +249,7 @@ elif choice=='Predict':
   else:
 
     st.subheader("Select data")
+    st.image("rfm_predict.JPG",caption="Example")
     uploaded_file_1 = st.file_uploader("Choose a file", type=['txt', 'csv'])
     df_predict = pd.read_csv(uploaded_file_1,  encoding="ISO-8859-1")
     st.write(df_predict)
