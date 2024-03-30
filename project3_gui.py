@@ -208,7 +208,7 @@ elif choice=='Predict':
                                                                     "Nhập thông tin khách hàng vào dataframe","Upload file format R F M"])
   if type == "Nhập mã khách hàng":
         st.subheader("Nhập mã khách hàng")
-        st.image("ex.JPG")
+        st.image("ex.JPG",caption='example')
 
     
         customer_id = st.text_input("Nhập mã khách hàng")
